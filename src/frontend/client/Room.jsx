@@ -9,11 +9,11 @@ const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    height: "100vh",
-    backgroundColor: "#263238"
+    height: "50vh",
+    backgroundColor: "#282c34"
   },
   paper: {
-    width: "50em",
+    width: "40em",
     height: "80%",
     position: "relative"
   },

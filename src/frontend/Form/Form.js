@@ -67,28 +67,16 @@ const Form = () => {
 					<div className="question">
 						<h3>{zombie.questions[formSection - 1].question}</h3>
 						<div className="question-btns">
-							<button
-								className="btn"
-								value={zombie.questions[formSection - 1].options[0]}
-								onClick={answerGiven}>
-								{zombie.questions[formSection - 1].options[0]}
-							</button>
-
-							<button
-								className="btn"
-								value={zombie.questions[formSection - 1].options[1]}
-								onClick={answerGiven}>
-								{zombie.questions[formSection - 1].options[1]}
-							</button>
+							<button className="btn" onClick={nextSection}>Next</button>
 						</div>
-						<p>Total Players: {totalPlayers}</p>
+						<p>Total Players: {totalPlayers}; Type in the chatroom anonymously!</p>
 					</div>
 				) : null}
 
 				{/* Questions are done */}
 				{formSection > zombie.questions.length ? (
 					<div>
-						<button className="btn green-btn" type='submit'>Submit Responses</button>
+						<p>Thanks for playing!</p>
 					</div>
 				) : null}
 			</form>
