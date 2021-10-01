@@ -2,11 +2,13 @@ import React from 'react';
 import Landing from './frontend/Landing/Landing';
 import logo from './logo.svg';
 import './App.css';
+import Form from './frontend/Form/Form';
 
 function App() {
   return (
     <div className="App">
       <Landing />
+      <Form />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
