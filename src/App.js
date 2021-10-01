@@ -12,8 +12,6 @@ function App() {
 			</div>
 			<div className='user-entry-form'>
 				<Form />
-			</div>
-			<div>
 				<Room />
 			</div>
 		</div>
