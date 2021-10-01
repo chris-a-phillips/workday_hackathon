@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/workday_hackathon/static/css/main.d8e8e57c.chunk.css",
+    "main.js": "/workday_hackathon/static/js/main.7031543b.chunk.js",
+    "main.js.map": "/workday_hackathon/static/js/main.7031543b.chunk.js.map",
+    "runtime-main.js": "/workday_hackathon/static/js/runtime-main.0614fa17.js",
+    "runtime-main.js.map": "/workday_hackathon/static/js/runtime-main.0614fa17.js.map",
+    "static/js/2.8aff9c87.chunk.js": "/workday_hackathon/static/js/2.8aff9c87.chunk.js",
+    "static/js/2.8aff9c87.chunk.js.map": "/workday_hackathon/static/js/2.8aff9c87.chunk.js.map",
+    "static/js/3.71956f3a.chunk.js": "/workday_hackathon/static/js/3.71956f3a.chunk.js",
+    "static/js/3.71956f3a.chunk.js.map": "/workday_hackathon/static/js/3.71956f3a.chunk.js.map",
+    "index.html": "/workday_hackathon/index.html",
+    "static/css/main.d8e8e57c.chunk.css.map": "/workday_hackathon/static/css/main.d8e8e57c.chunk.css.map",
+    "static/js/2.8aff9c87.chunk.js.LICENSE.txt": "/workday_hackathon/static/js/2.8aff9c87.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/workday_hackathon/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0614fa17.js",
+    "static/js/2.8aff9c87.chunk.js",
+    "static/css/main.d8e8e57c.chunk.css",
+    "static/js/main.7031543b.chunk.js"
+  ]
+}
