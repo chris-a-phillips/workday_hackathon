@@ -9,6 +9,7 @@ const Form = () => {
 	};
 	const [formSection, setFormSection] = useState(0);
 	const [responses, setResponses] = useState(blankResponse);
+	const [totalPlayers, setTotalPlayers] = useState(0);
 
 	const answerGiven = (event) => {
 		handleChange(event)
@@ -19,16 +20,19 @@ const Form = () => {
 		const questionKey = `question_${formSection}`
 		const currResponses = responses
 		currResponses[questionKey] = event.target.value
-
 		setResponses(currResponses);
 	};
 
-	const handleNameChange = (event) => {
-		setResponses({
-			...responses,
-			'user': event.target.value
-		})
+	const handleTotalPlayers = (event) => {
+		setTotalPlayers(event.target.value)
 	}
+
+	// const handleNameChange = (event) => {
+	// 	setResponses({
+	// 		...responses,
+	// 		'user': event.target.value
+	// 	})
+	// }
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
@@ -42,7 +46,6 @@ const Form = () => {
 	};
 
 	const zombie = questions[1];
-
 	return (
 		<div>
 			<form className="form" onSubmit={handleSubmit}>
@@ -51,8 +54,8 @@ const Form = () => {
 						<input
 							type='text'
 							name='user'
-							placeholder='Enter Your Name'
-							onChange={handleNameChange}
+							placeholder='How many players?'
+							onChange={handleTotalPlayers}
 							className="input-field"
 						/>
 						<button className="btn" onClick={nextSection}>Next</button>
@@ -78,6 +81,7 @@ const Form = () => {
 								{zombie.questions[formSection - 1].options[1]}
 							</button>
 						</div>
+						<p>Total Players: {totalPlayers}</p>
 					</div>
 				) : null}
 
