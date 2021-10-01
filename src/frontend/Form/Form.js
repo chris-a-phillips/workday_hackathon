@@ -159,9 +159,9 @@ const Form = () => {
 					</div>
 				) : null}
 				{formSection <= 4 ? (
-					<div>
+					<div className="question-btns">
 						{formSection > 0 ? (
-							<button onClick={prevSection}>Previous</button>
+							<button className="btn" onClick={prevSection}>Previous</button>
 						) : null}
 						<button className="btn" onClick={nextSection}>Next</button>
 					</div>

@@ -4,6 +4,13 @@
   align-items: center;
 }
 
+.question-btns {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+
 .input-field {
   margin: 5px;
   border-radius: 5px;
