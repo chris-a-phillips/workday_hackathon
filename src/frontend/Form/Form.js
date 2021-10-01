@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import questions from '../../backend/questions.js';
+import './Form.css'
 
 const Form = () => {
 	const [submitted, setSubmitted] = useState(false);
@@ -40,16 +41,15 @@ const Form = () => {
 
 	return (
 		<div>
-			Form Page
-			<form onSubmit={handleSubmit}>
+			<form className="form" onSubmit={handleSubmit}>
 				{formSection === 0 ? (
 					<div>
-						<label htmlFor='user'>Name</label>
 						<input
 							type='text'
 							name='user'
-							placeholder='Enter Name'
+							placeholder='Enter Your Name'
 							onChange={handleChange}
+							className="input-field"
 						/>
 					</div>
 				) : null}
@@ -159,15 +159,15 @@ const Form = () => {
 					</div>
 				) : null}
 				{formSection <= 4 ? (
-					<div>
+					<div className="question-btns">
 						{formSection > 0 ? (
-							<button onClick={prevSection}>Previous</button>
+							<button className="btn" onClick={prevSection}>Previous</button>
 						) : null}
-						<button onClick={nextSection}>Next</button>
+						<button className="btn" onClick={nextSection}>Next</button>
 					</div>
 				) : (
 					<div>
-						<button type='submit'>Submit</button>
+						<button className="btn green-btn" type='submit'>Submit</button>
 					</div>
 				)}
 			</form>
