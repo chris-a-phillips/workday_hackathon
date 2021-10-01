@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  color: white;
+  background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing {
+  margin-top: 1em;
+}
+
+.user-entry-form {
+  margin-top: 10em;
 }
 
 .App-logo {
