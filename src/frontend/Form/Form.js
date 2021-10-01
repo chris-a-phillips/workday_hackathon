@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import questions from '../../backend/questions.js';
 
 const Form = () => {
 	const [submitted, setSubmitted] = useState(false);
@@ -35,6 +36,8 @@ const Form = () => {
 		setFormSection(formSection - 1);
 	};
 
+	const zombie = questions[0];
+
 	return (
 		<div>
 			Form Page
@@ -53,7 +56,7 @@ const Form = () => {
 				{formSection === 1 ? (
 					<div>
 						<div>
-							<h3>Question 1</h3>
+							<h3>{zombie.questions[0].one}</h3>
 							<label htmlFor='question_one'>yes</label>
 							<input
 								type='radio'
@@ -74,7 +77,7 @@ const Form = () => {
 				{formSection === 2 ? (
 					<div>
 						<div>
-							<h3>Question 2</h3>
+							<h3>{zombie.questions[1].two}</h3>
 							<label htmlFor='question_two'>yes</label>
 							<input
 								type='radio'
@@ -95,7 +98,7 @@ const Form = () => {
 				{formSection === 3 ? (
 					<div>
 						<div>
-							<h3>Question 3</h3>
+							<h3>{zombie.questions[2].three}</h3>
 							<label htmlFor='question_three'>yes</label>
 							<input
 								type='radio'
@@ -116,7 +119,7 @@ const Form = () => {
 				{formSection === 4 ? (
 					<div>
 						<div>
-							<h3>Question 4</h3>
+							<h3>{zombie.questions[3].four}</h3>
 							<label htmlFor='question_four'>yes</label>
 							<input
 								type='radio'
@@ -137,7 +140,7 @@ const Form = () => {
 				{formSection === 5 ? (
 					<div>
 						<div>
-							<h3>Question 5</h3>
+							<h3>{zombie.questions[4].five}</h3>
 							<label htmlFor='question_five'>yes</label>
 							<input
 								type='radio'
