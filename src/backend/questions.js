@@ -3,23 +3,23 @@ const list = [
     theme: 'Zombie',
     questions: [
       {
-        one: 'Zombie question 1',
+        question: 'Zombie question 1',
         options: ['yes', 'no'],
       },
       {
-        two: 'Zombie question 2',
+        question: 'Zombie question 2',
         options: ['yes', 'no'],
       },
       {
-        three: 'Zombie question 3',
+        question: 'Zombie question 3',
         options: ['yes', 'no'],
       },
       {
-        four: 'Zombie question 4',
+        question: 'Zombie question 4',
         options: ['yes', 'no'],
       },
       {
-        five: 'Zombie question 5',
+        question: 'Zombie question 5',
         options: ['yes', 'no'],
       }
     ]
