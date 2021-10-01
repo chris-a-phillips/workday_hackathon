@@ -4,12 +4,22 @@
   align-items: center;
 }
 
+.name-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .question-btns {
   display: flex;
   flex-direction: row;
-  margin: 10px;
 }
-
 
 .input-field {
   margin: 5px;
@@ -23,6 +33,7 @@
   background-color: #1B69D9;
   font-size: 1em;
   border-radius: 5px;
+  min-width: 50px;
   padding: 6px;
   font-weight: 500;
   color: #ffffff;
