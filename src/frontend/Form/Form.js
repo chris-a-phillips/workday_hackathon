@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Form = () => {
-	const [submited, setSubmitted] = useState(false);
+	const [submitted, setSubmitted] = useState(false);
 	const blankResponse = {
 		user: '',
 		question_one: '',
